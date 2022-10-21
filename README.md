@@ -42,7 +42,7 @@ Anaconda – Python 3.7 Installation / Google Colab /Jupiter Notebook
 
 ## PROGRAM:
 ### Libraries
-```
+```python
 import numpy as np 
 import pandas as pd 
 import matplotlib.pyplot as plt 
@@ -52,7 +52,7 @@ from sklearn.metrics import accuracy_score
 ```
 
 ### Class Perceptron
-```
+```python
 class Perceptron:
   def __init__(self, learning_rate=0.1):
     self.learning_rate = learning_rate
@@ -77,8 +77,8 @@ class Perceptron:
     return np.where(self.f(x) >= 0,1,-1) 
 ```
 
-```
-df = pd.read_csv("C:\Users\chief\OneDrive\Documents\Experiment-2--Implementation-of-Perceptron\IRIS.csv")
+```python
+df = pd.read_csv("/content/drive/MyDrive/Colab Notebooks/Semester 3/Neural Networks/Exp_2/IRIS.csv")
 df.head()
 
 y = df.iloc[:,-1].values
@@ -127,19 +127,19 @@ print("accuracy = " , accuracy_score(classifier.predict(x_test), y_test)*100)
 ## Output:
 
 ### Dataset
-![df](./out/df.png)
+![df](./df.png)
 
 ### Scatterplot
-![plot](./out/plot.png)
+![plot](./plot.png)
 
 ### Y- values
-![val](./out/y.png)
+![val](./y.png)
 
 ### Error Plot
-![val](./out/error.png)
+![val](./error.png)
 
 ### Accuracy
-![acc](./out/accuracy.png)
+![acc](./accuracy.png)
 
 # Result:
 Thus a perceptron for classification is implemented using python
